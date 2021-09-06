@@ -3,7 +3,7 @@ const sequence = {
     get id() { return this._id++}
 }
 
-const pessoa = {}
+const pessoas = {}
 
 function salvarPessoas(pessoa) {
     if(!pessoa.id) pessoa.id = sequence.id
@@ -15,7 +15,7 @@ function mostrarPessoa(id) {
     return pessoas[id] || {}
 }
 
-function mostrarPessoas(){
+function mostrarPessoas() {
     return Object.values(pessoas)
 }
 
