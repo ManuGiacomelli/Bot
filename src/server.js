@@ -7,12 +7,12 @@ app.use(bodyParser.urlencoded({ extended: true}))
 
 
 app.get('/pessoas', (req, res) => {
-    res.send (database.mostrarPessoas())
+    res.send(dataBase.mostrarPessoas())
 })
 
 
 app.get('/pessoas/:id', (req, res) => {
-    res.send (database.mostrarPessoa(req.params.id))
+    res.send (dataBase.mostrarPessoa(req.params.id))
 })
 
 
